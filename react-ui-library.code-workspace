@@ -2,7 +2,8 @@
   "folders": [
     {
       "name": "React UI Library",
-      "path": "./"
+      "path": "./",
+      "prettier.configPath": "./.prettierrc.cjs",
     }
   ],
   "extensions": {
@@ -37,11 +38,6 @@
       "typescriptreact"
     ],
     "css.lint.unknownAtRules": "ignore", //@tailwind imports for warnings
-    "eslint.workingDirectories": [
-      "./serval-app",
-      "./serval-cms",
-      "./serval-server"
-    ],
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "typescript.preferences.importModuleSpecifier": "non-relative",
     "files.eol": "\n",
@@ -60,7 +56,7 @@
       "**/CVS": true,
       "**/.DS_Store": true,
       "**/Thumbs.db": true,
-      "**/node_modules": true
+      "**/node_modules": false
     }
   }
 }
