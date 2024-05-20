@@ -4,7 +4,7 @@
       "name": "React UI Library",
       "path": "./",
       "prettier.configPath": "./.prettierrc.cjs",
-    }
+    },
   ],
   "extensions": {
     "recommendations": [
@@ -13,29 +13,21 @@
       "redhat.vscode-yaml", //For Docker-Compose Yaml Files
       "donjayamanne.githistory", //Helps with git, can compare files.
       "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
-      "firsttris.vscode-jest-runner" // Jest Runner test within VSCode
-    ]
+      "firsttris.vscode-jest-runner", // Jest Runner test within VSCode
+    ],
   },
   "settings": {
     "yaml.schemas": {
-      "https://json.schemastore.org/github-workflow.json": [
-        "*.github/workflows/*.yaml",
-        "*.github/workflows/*.yml"
-      ],
-      "https://json.schemastore.org/github-action.json": [
-        "action.yaml",
-        "action.yml"
-      ]
+      "https://json.schemastore.org/github-workflow.json": ["*.github/workflows/*.yaml", "*.github/workflows/*.yml"],
+      "https://json.schemastore.org/github-action.json": ["action.yaml", "action.yml"],
     },
     "[github-actions-workflow]": {
-      "editor.defaultFormatter": "redhat.vscode-yaml"
+      "editor.defaultFormatter": "redhat.vscode-yaml",
     },
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-      "html",
-      "typescript",
-      "typescriptreact"
+    "eslint.validate": ["javascript", "javascriptreact", "html", "typescript", "typescriptreact"],
+    "tailwindCSS.experimental.classRegex": [
+      ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+      ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
     ],
     "css.lint.unknownAtRules": "ignore", //@tailwind imports for warnings
     "typescript.enablePromptUseWorkspaceTsdk": true,
@@ -56,7 +48,7 @@
       "**/CVS": true,
       "**/.DS_Store": true,
       "**/Thumbs.db": true,
-      "**/node_modules": false
-    }
-  }
+      "**/node_modules": false,
+    },
+  },
 }

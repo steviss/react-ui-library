@@ -1,8 +1,11 @@
 const config = async () => {
   return {
-    testEnvironment: 'jsdom',
+    testEnvironment: 'jest-environment-jsdom',
     verbose: true,
     modulePathIgnorePatterns: ['dist'],
+    moduleNameMapper: {
+      '.(css|less|scss)$': 'identity-obj-proxy',
+    },
   }
 }
 
